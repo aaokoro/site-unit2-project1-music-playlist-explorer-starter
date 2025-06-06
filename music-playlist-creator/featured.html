@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Featured Playlist - Music Playlist Explorer</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="banner">
+        <div class="header-content">
+            <h1>Music Playlist Explorer</h1>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">All Playlists</a></li>
+                    <li><a href="featured.html" class="active">Featured Playlist</a></li>
+                </ul>
+            </nav>
+            <div class="search-container">
+                <form id="search-form">
+                    <input type="text" id="search-input" placeholder="Search playlists or songs...">
+                    <button type="submit" id="search-button">
+                        <i class="material-icons">search</i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="featured-container">
+            <div class="featured-header-controls">
+                <div>
+                    <h2>Featured Playlist</h2>
+                    <p class="featured-subtitle">Click shuffle to discover a new playlist!</p>
+                </div>
+                <button id="shuffle-featured" class="shuffle-button">
+                    <i class="material-icons">shuffle</i> Shuffle
+                </button>
+            </div>
+
+            <div class="featured-content">
+                <!-- Featured playlist content will be loaded here by JavaScript -->
+                <div id="loading">Loading featured playlist...</div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="simple-footer">
+            <h2>Music Playlist Explorer</h2>
+            <p>Tunes that make you feel good</p>
+        </div>
+    </footer>
+
+    <!-- Include all modals from index.html -->
+    <!-- Vibes Modal -->
+    <section class="modal-overlay" id="modal-0">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+
+            <div class="modal-header">
+                <div class="cover-container">
+                    <img src="assets/img/NewRB.jpeg" alt="photo of Music" class="playlist-cover" width="150px" height="150px">
+                </div>
+                <div class="playlist-info">
+                    <h2>Vibes</h2>
+                    <p>Aliyah Simone</p>
+                    <div class="modal-buttons">
+                        <button class="shuffle-button">
+                            <i class="material-icons">shuffle</i> Shuffle
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="song-boxes">
+                <div class="song-box">
+                    <span class="duration">3:42</span>
+                    <img src="assets/img/s.jpeg" alt="Song cover" class="song-cover">
+                    <div class="song-details">
+                        <p class="song-title">CPR</p>
+                        <p class="song-artist">Summer Walker</p>
+                        <p class="song-album">Over It</p>
+                    </div>
+                </div>
+
+                <div class="song-box">
+                    <span class="duration">3:21</span>
+                    <img src="assets/img/Sos.jpeg" alt="Song cover" class="song-cover">
+                    <div class="song-details">
+                        <p class="song-title">Snooze</p>
+                        <p class="song-artist">SZA</p>
+                        <p class="song-album">SOS</p>
+                    </div>
+                </div>
+
+                <div class="song-box">
+                    <span class="duration">4:05</span>
+                    <img src="assets/img/SZA.jpg" alt="Song cover" class="song-cover">
+                    <div class="song-details">
+                        <p class="song-title">Kill Bill</p>
+                        <p class="song-artist">SZA</p>
+                        <p class="song-album">SOS</p>
+                    </div>
+                </div>
+
+                <div class="song-box">
+                    <span class="duration">3:15</span>
+                    <img src="assets/img/Cpr.jpeg" alt="Song cover" class="song-cover">
+                    <div class="song-details">
+                        <p class="song-title">Karma</p>
+                        <p class="song-artist">Victoria Monét</p>
+                        <p class="song-album">Jaguar II</p>
+                    </div>
+                </div>
+
+                <div class="song-box">
+                    <span class="duration">3:38</span>
+                    <img src="assets/img/R&B.jpeg" alt="Song cover" class="song-cover">
+                    <div class="song-details">
+                        <p class="song-title">Plastic Off the Sofa</p>
+                        <p class="song-artist">Beyoncé</p>
+                        <p class="song-album">Renaissance</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Afrobeats Modal -->
+    <section class="modal-overlay" id="modal-1">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+
+            <div class="modal-header">
+                <div class="cover-container">
+                    <img src="assets/img/Ab.jpg" alt="photo of Music" class="playlist-cover" width="150px" height="150px">
+                </div>
+                <div class="playlist-info">
+                    <h2>Afrobeats</h2>
+                    <p>Kwesi Opoku</p>
+                    <div class="modal-buttons">
+                        <button class="shuffle-button">
+                            <i class="material-icons">shuffle</i> Shuffle
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="song-boxes">
+                <div class="song-box">
+                    <span class="duration">3:15</span>
+                    <img src="assets/img/images (5).jpeg" alt="Song cover" class="song-cover">
+                    <div class="song-details">
+                        <p class="song-title">Unavailable</p>
+                        <p class="song-artist">Davido</p>
+                        <p class="song-album">Timeless</p>
+                    </div>
+                </div>
+
+                <div class="song-box">
+                    <span class="duration">2:58</span>
+                    <img src="assets/img/images (6).jpeg" alt="Song cover" class="song-cover">
+                    <div class="song-details">
+                        <p class="song-title">Rush</p>
+                        <p class="song-artist">Ayra Starr</p>
+                        <p class="song-album">19 & Dangerous</p>
+                    </div>
+                </div>
+
+                <div class="song-box">
+                    <span class="duration">3:37</span>
+                    <img src="assets/img/images (7).jpeg" alt="Song cover" class="song-cover">
+                    <div class="song-details">
+                        <p class="song-title">Calm Down</p>
+                        <p class="song-artist">Rema</p>
+                        <p class="song-album">Rave & Roses</p>
+                    </div>
+                </div>
+
+                <div class="song-box">
+                    <span class="duration">3:25</span>
+                    <img src="assets/img/images (8).jpeg" alt="Song cover" class="song-cover">
+                    <div class="song-details">
+                        <p class="song-title">Last Last</p>
+                        <p class="song-artist">Burna Boy</p>
+                        <p class="song-album">Love, Damini</p>
+                    </div>
+                </div>
+
+                <div class="song-box">
+                    <span class="duration">3:05</span>
+                    <img src="assets/img/images (9).jpeg" alt="Song cover" class="song-cover">
+                    <div class="song-details">
+                        <p class="song-title">Essence</p>
+                        <p class="song-artist">Wizkid ft. Tems</p>
+                        <p class="song-album">Made in Lagos</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Igbo High Life Modal -->
+    <section class="modal-overlay" id="modal-2">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+
+            <div class="modal-header">
+                <div class="cover-container">
+                    <img src="assets/img/Ih.jpg" alt="photo of Music" class="playlist-cover" width="150px" height="150px">
+                </div>
+                <div class="playlist-info">
+                    <h2>Igbo High Life</h2>
+                    <p>Ada Eze</p>
+                    <div class="modal-buttons">
+                        <button class="shuffle-button">
+                            <i class="material-icons">shuffle</i> Shuffle
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="song-boxes">
+                <div class="song-box">
+                    <span class="duration">4:22</span>
+                    <img src="assets/img/images (1).jpeg" alt="Song cover" class="song-cover">
+                    <div class="song-details">
+                        <p class="song-title">Odogwu</p>
+                        <p class="song-artist">Flavour</p>
+                        <p class="song-album">Flavour of Africa</p>
+                    </div>
+                </div>
+
+                <div class="song-box">
+                    <span class="duration">5:10</span>
+                    <img src="assets/img/images (2).jpeg" alt="Song cover" class="song-cover">
+                    <div class="song-details">
+                        <p class="song-title">Ada Ada</p>
+                        <p class="song-artist">Flavour</p>
+                        <p class="song-album">Blessed</p>
+                    </div>
+                </div>
+
+                <div class="song-box">
+                    <span class="duration">4:45</span>
+                    <img src="assets/img/images (3).jpeg" alt="Song cover" class="song-cover">
+                    <div class="song-details">
+                        <p class="song-title">Ogene</p>
+                        <p class="song-artist">Phyno ft. Flavour</p>
+                        <p class="song-album">Deal With It</p>
+                    </div>
+                </div>
+
+                <div class="song-box">
+                    <span class="duration">4:18</span>
+                    <img src="assets/img/images (4).jpeg" alt="Song cover" class="song-cover">
+                    <div class="song-details">
+                        <p class="song-title">Nwa Baby</p>
+                        <p class="song-artist">Flavour</p>
+                        <p class="song-album">Uplifted</p>
+                    </div>
+                </div>
+
+                <div class="song-box">
+                    <span class="duration">5:32</span>
+                    <img src="assets/img/Ih.jpg" alt="Song cover" class="song-cover">
+                    <div class="song-details">
+                        <p class="song-title">Ololufe</p>
+                        <p class="song-artist">Flavour ft. Chidinma</p>
+                        <p class="song-album">Thankful</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GRWM Modal -->
+    <section class="modal-overlay" id="modal-3">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+
+            <div class="modal-header">
+                <div class="cover-container">
+                    <img src="assets/img/images (3).jpeg" alt="photo of Music" class="playlist-cover" width="150px" height="150px">
+                </div>
+                <div class="playlist-info">
+                    <h2>GRWM</h2>
+                    <p>Mya Lynn</p>
+                    <div class="modal-buttons">
+                        <button class="shuffle-button">
+                            <i class="material-icons">shuffle</i> Shuffle
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="song-boxes">
+                <div class="song-box">
+                    <span class="duration">3:28</span>
+                    <img src="assets/img/grwm.jpeg" alt="Song cover" class="song-cover">
+                    <div class="song-details">
+                        <p class="song-title">Glam</p>
+                        <p class="song-artist">Sabrina Carpenter</p>
+                        <p class="song-album">Short n' Sweet</p>
+                    </div>
+                </div>
+
+                <div class="song-box">
+                    <span class="duration">3:05</span>
+                    <img src="assets/img/images (10).jpeg" alt="Song cover" class="song-cover">
+                    <div class="song-details">
+                        <p class="song-title">Feather</p>
+                        <p class="song-artist">Sabrina Carpenter</p>
+                        <p class="song-album">Emails I Can't Send</p>
+                    </div>
+                </div>
+
+                <div class="song-box">
+                    <span class="duration">3:12</span>
+                    <img src="assets/img/images (11).jpeg" alt="Song cover" class="song-cover">
+                    <div class="song-details">
+                        <p class="song-title">Nonsense</p>
+                        <p class="song-artist">Sabrina Carpenter</p>
+                        <p class="song-album">Emails I Can't Send</p>
+                    </div>
+                </div>
+
+                <div class="song-box">
+                    <span class="duration">3:42</span>
+                    <img src="assets/img/images (12).jpeg" alt="Song cover" class="song-cover">
+                    <div class="song-details">
+                        <p class="song-title">Espresso</p>
+                        <p class="song-artist">Sabrina Carpenter</p>
+                        <p class="song-album">Short n' Sweet</p>
+                    </div>
+                </div>
+
+                <div class="song-box">
+                    <span class="duration">3:18</span>
+                    <img src="assets/img/images (3).jpeg" alt="Song cover" class="song-cover">
+                    <div class="song-details">
+                        <p class="song-title">Please Please Please</p>
+                        <p class="song-artist">Sabrina Carpenter</p>
+                        <p class="song-album">Short n' Sweet</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rap Modal -->
+    <section class="modal-overlay" id="modal-4">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+
+            <div class="modal-header">
+                <div class="cover-container">
+                    <img src="assets/img/d828bd5ac2c2135d9d03bec3e8145b8d.jpeg" alt="photo of Music" class="playlist-cover" width="150px" height="150px">
+                </div>
+                <div class="playlist-info">
+                    <h2>Rap</h2>
+                    <p>Jamal Brown</p>
+                    <div class="modal-buttons">
+                        <button class="shuffle-button">
+                            <i class="material-icons">shuffle</i> Shuffle
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="song-boxes">
+                <div class="song-box">
+                    <span class="duration">4:12</span>
+                    <img src="assets/img/d828bd5ac2c2135d9d03bec3e8145b8d.jpeg" alt="Song cover" class="song-cover">
+                    <div class="song-details">
+                        <p class="song-title">SICKO MODE</p>
+                        <p class="song-artist">Travis Scott</p>
+                        <p class="song-album">ASTROWORLD</p>
+                    </div>
+                </div>
+
+                <div class="song-box">
+                    <span class="duration">3:55</span>
+                    <img src="assets/img/images.jpeg" alt="Song cover" class="song-cover">
+                    <div class="song-details">
+                        <p class="song-title">DNA.</p>
+                        <p class="song-artist">Kendrick Lamar</p>
+                        <p class="song-album">DAMN.</p>
+                    </div>
+                </div>
+
+                <div class="song-box">
+                    <span class="duration">5:20</span>
+                    <img src="assets/img/images (2).jpeg" alt="Song cover" class="song-cover">
+                    <div class="song-details">
+                        <p class="song-title">POWER</p>
+                        <p class="song-artist">Kanye West</p>
+                        <p class="song-album">My Beautiful Dark Twisted Fantasy</p>
+                    </div>
+                </div>
+
+                <div class="song-box">
+                    <span class="duration">3:14</span>
+                    <img src="assets/img/images.jpeg" alt="Song cover" class="song-cover">
+                    <div class="song-details">
+                        <p class="song-title">Humble</p>
+                        <p class="song-artist">Kendrick Lamar</p>
+                        <p class="song-album">DAMN.</p>
+                    </div>
+                </div>
+
+                <div class="song-box">
+                    <span class="duration">4:27</span>
+                    <img src="assets/img/images (2).jpeg" alt="Song cover" class="song-cover">
+                    <div class="song-details">
+                        <p class="song-title">N95</p>
+                        <p class="song-artist">Kendrick Lamar</p>
+                        <p class="song-album">Mr. Morale & The Big Steppers</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gospel Modal -->
+    <section class="modal-overlay" id="modal-5">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+
+            <div class="modal-header">
+                <div class="cover-container">
+                    <img src="assets/img/jesus.jpg" alt="photo of Music" class="playlist-cover" width="150px" height="150px">
+                </div>
+                <div class="playlist-info">
+                    <h2>Gospel</h2>
+                    <p>Nya Kay</p>
+                    <div class="modal-buttons">
+                        <button class="shuffle-button">
+                            <i class="material-icons">shuffle</i> Shuffle
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="song-boxes">
+                <div class="song-box">
+                    <span class="duration">5:32</span>
+                    <img src="assets/img/jesus.jpg" alt="Song cover" class="song-cover">
+                    <div class="song-details">
+                        <p class="song-title">Way Maker</p>
+                        <p class="song-artist">Sinach</p>
+                        <p class="song-album">Way Maker</p>
+                    </div>
+                </div>
+
+                <div class="song-box">
+                    <span class="duration">4:48</span>
+                    <img src="assets/img/clouds.jpg" alt="Song cover" class="song-cover">
+                    <div class="song-details">
+                        <p class="song-title">Oceans (Where Feet May Fail)</p>
+                        <p class="song-artist">Hillsong UNITED</p>
+                        <p class="song-album">Zion</p>
+                    </div>
+                </div>
+
+                <div class="song-box">
+                    <span class="duration">6:15</span>
+                    <img src="assets/img/images (5).jpeg" alt="Song cover" class="song-cover">
+                    <div class="song-details">
+                        <p class="song-title">Graves Into Gardens</p>
+                        <p class="song-artist">Elevation Worship</p>
+                        <p class="song-album">Graves Into Gardens</p>
+                    </div>
+                </div>
+
+                <div class="song-box">
+                    <span class="duration">4:56</span>
+                    <img src="assets/img/images (6).jpeg" alt="Song cover" class="song-cover">
+                    <div class="song-details">
+                        <p class="song-title">You Say</p>
+                        <p class="song-artist">Lauren Daigle</p>
+                        <p class="song-album">Look Up Child</p>
+                    </div>
+                </div>
+
+                <div class="song-box">
+                    <span class="duration">5:12</span>
+                    <img src="assets/img/images (7).jpeg" alt="Song cover" class="song-cover">
+                    <div class="song-details">
+                        <p class="song-title">Good Good Father</p>
+                        <p class="song-artist">Chris Tomlin</p>
+                        <p class="song-album">Never Lose Sight</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 90's classifs Modal -->
+    <section class="modal-overlay" id="modal-6">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+
+            <div class="modal-header">
+                <div class="cover-container">
+                    <img src="assets/img/images (1).jpeg" alt="photo of Music" class="playlist-cover" width="150px" height="150px">
+                </div>
+                <div class="playlist-info">
+                    <h2>90's classifs</h2>
+                    <p>Harmony Jones</p>
+                    <div class="modal-buttons">
+                        <button class="shuffle-button">
+                            <i class="material-icons">shuffle</i> Shuffle
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="song-boxes">
+                <div class="song-box">
+                    <span class="duration">4:10</span>
+                    <img src="assets/img/images (1).jpeg" alt="Song cover" class="song-cover">
+                    <div class="song-details">
+                        <p class="song-title">No Scrubs</p>
+                        <p class="song-artist">TLC</p>
+                        <p class="song-album">FanMail</p>
+                    </div>
+                </div>
+
+                <div class="song-box">
+                    <span class="duration">3:45</span>
+                    <img src="assets/img/images (8).jpeg" alt="Song cover" class="song-cover">
+                    <div class="song-details">
+                        <p class="song-title">Waterfalls</p>
+                        <p class="song-artist">TLC</p>
+                        <p class="song-album">CrazySexyCool</p>
+                    </div>
+                </div>
+
+                <div class="song-box">
+                    <span class="duration">5:05</span>
+                    <img src="assets/img/images (9).jpeg" alt="Song cover" class="song-cover">
+                    <div class="song-details">
+                        <p class="song-title">I Will Always Love You</p>
+                        <p class="song-artist">Whitney Houston</p>
+                        <p class="song-album">The Bodyguard</p>
+                    </div>
+                </div>
+
+                <div class="song-box">
+                    <span class="duration">4:32</span>
+                    <img src="assets/img/images (10).jpeg" alt="Song cover" class="song-cover">
+                    <div class="song-details">
+                        <p class="song-title">...Baby One More Time</p>
+                        <p class="song-artist">Britney Spears</p>
+                        <p class="song-album">...Baby One More Time</p>
+                    </div>
+                </div>
+
+                <div class="song-box">
+                    <span class="duration">3:52</span>
+                    <img src="assets/img/images (11).jpeg" alt="Song cover" class="song-cover">
+                    <div class="song-details">
+                        <p class="song-title">Wannabe</p>
+                        <p class="song-artist">Spice Girls</p>
+                        <p class="song-album">Spice</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instrumentals Modal -->
+    <section class="modal-overlay" id="modal-7">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+
+            <div class="modal-header">
+                <div class="cover-container">
+                    <img src="assets/img/images (4).jpeg" alt="photo of Music" class="playlist-cover" width="150px" height="150px">
+                </div>
+                <div class="playlist-info">
+                    <h2>Instrumentals</h2>
+                    <p>Layla Gray</p>
+                    <div class="modal-buttons">
+                        <button class="shuffle-button">
+                            <i class="material-icons">shuffle</i> Shuffle
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="song-boxes">
+                <div class="song-box">
+                    <span class="duration">4:35</span>
+                    <img src="assets/img/images (4).jpeg" alt="Song cover" class="song-cover">
+                    <div class="song-details">
+                        <p class="song-title">Experience</p>
+                        <p class="song-artist">Ludovico Einaudi</p>
+                        <p class="song-album">In a Time Lapse</p>
+                    </div>
+                </div>
+
+                <div class="song-box">
+                    <span class="duration">3:52</span>
+                    <img src="assets/img/images (12).jpeg" alt="Song cover" class="song-cover">
+                    <div class="song-details">
+                        <p class="song-title">River Flows In You</p>
+                        <p class="song-artist">Yiruma</p>
+                        <p class="song-album">First Love</p>
+                    </div>
+                </div>
+
+                <div class="song-box">
+                    <span class="duration">5:22</span>
+                    <img src="assets/img/clouds.jpg" alt="Song cover" class="song-cover">
+                    <div class="song-details">
+                        <p class="song-title">Nuvole Bianche</p>
+                        <p class="song-artist">Ludovico Einaudi</p>
+                        <p class="song-album">Una Mattina</p>
+                    </div>
+                </div>
+
+                <div class="song-box">
+                    <span class="duration">4:15</span>
+                    <img src="assets/img/images (2).jpeg" alt="Song cover" class="song-cover">
+                    <div class="song-details">
+                        <p class="song-title">Clair de Lune</p>
+                        <p class="song-artist">Claude Debussy</p>
+                        <p class="song-album">Suite Bergamasque</p>
+                    </div>
+                </div>
+
+                <div class="song-box">
+                    <span class="duration">3:48</span>
+                    <img src="assets/img/images (3).jpeg" alt="Song cover" class="song-cover">
+                    <div class="song-details">
+                        <p class="song-title">Gymnopédie No.1</p>
+                        <p class="song-artist">Erik Satie</p>
+                        <p class="song-album">Trois Gymnopédies</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dance Modal -->
+    <section class="modal-overlay" id="modal-8">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+
+            <div class="modal-header">
+                <div class="cover-container">
+                    <img src="assets/img/7ibwdwqwqyt71.jpg" alt="photo of Music" class="playlist-cover" width="150px" height="150px">
+                </div>
+                <div class="playlist-info">
+                    <h2>Dance</h2>
+                    <p>Kalin White</p>
+                    <div class="modal-buttons">
+                        <button class="shuffle-button">
+                            <i class="material-icons">shuffle</i> Shuffle
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="song-boxes">
+                <div class="song-box">
+                    <span class="duration">3:18</span>
+                    <img src="assets/img/7ibwdwqwqyt71.jpg" alt="Song cover" class="song-cover">
+                    <div class="song-details">
+                        <p class="song-title">Don't Start Now</p>
+                        <p class="song-artist">Dua Lipa</p>
+                        <p class="song-album">Future Nostalgia</p>
+                    </div>
+                </div>
+
+                <div class="song-box">
+                    <span class="duration">3:29</span>
+                    <img src="assets/img/images (8).jpeg" alt="Song cover" class="song-cover">
+                    <div class="song-details">
+                        <p class="song-title">Physical</p>
+                        <p class="song-artist">Dua Lipa</p>
+                        <p class="song-album">Future Nostalgia</p>
+                    </div>
+                </div>
+
+                <div class="song-box">
+                    <span class="duration">3:47</span>
+                    <img src="assets/img/images (9).jpeg" alt="Song cover" class="song-cover">
+                    <div class="song-details">
+                        <p class="song-title">Levitating</p>
+                        <p class="song-artist">Dua Lipa ft. DaBaby</p>
+                        <p class="song-album">Future Nostalgia</p>
+                    </div>
+                </div>
+
+                <div class="song-box">
+                    <span class="duration">3:33</span>
+                    <img src="assets/img/images (10).jpeg" alt="Song cover" class="song-cover">
+                    <div class="song-details">
+                        <p class="song-title">Break My Heart</p>
+                        <p class="song-artist">Dua Lipa</p>
+                        <p class="song-album">Future Nostalgia</p>
+                    </div>
+                </div>
+
+                <div class="song-box">
+                    <span class="duration">3:16</span>
+                    <img src="assets/img/images (11).jpeg" alt="Song cover" class="song-cover">
+                    <div class="song-details">
+                        <p class="song-title">Hallucinate</p>
+                        <p class="song-artist">Dua Lipa</p>
+                        <p class="song-album">Future Nostalgia</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+    <script src="featured.js"></script>
+</body>
+</html>

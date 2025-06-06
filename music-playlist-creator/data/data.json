@@ -1,0 +1,391 @@
+{
+  "playlists": [
+    {
+      "playlistID": 1,
+      "playlist_name": "Vibes",
+      "playlist_author": "Aliyah Simone",
+      "playlist_art": "assets/img/NewRB.jpeg",
+      "songs": [
+        {
+          "title": "CPR",
+          "artist": "Summer Walker",
+          "album": "Over It",
+          "duration": "3:42",
+          "cover": "assets/img/s.jpeg"
+        },
+        {
+          "title": "Snooze",
+          "artist": "SZA",
+          "album": "SOS",
+          "duration": "3:21",
+          "cover": "assets/img/Sos.jpeg"
+        },
+        {
+          "title": "Kill Bill",
+          "artist": "SZA",
+          "album": "SOS",
+          "duration": "4:05",
+          "cover": "assets/img/SZA.jpg"
+        },
+        {
+          "title": "Karma",
+          "artist": "Victoria Monét",
+          "album": "Jaguar II",
+          "duration": "3:15",
+          "cover": "assets/img/Cpr.jpeg"
+        },
+        {
+          "title": "Plastic Off the Sofa",
+          "artist": "Beyoncé",
+          "album": "Renaissance",
+          "duration": "3:38",
+          "cover": "assets/img/R&B.jpeg"
+        }
+      ]
+    },
+    {
+      "playlistID": 2,
+      "playlist_name": "Afrobeats",
+      "playlist_author": "Kwesi Opoku",
+      "playlist_art": "assets/img/Ab.jpg",
+      "songs": [
+        {
+          "title": "Unavailable",
+          "artist": "Davido",
+          "album": "Timeless",
+          "duration": "3:15",
+          "cover": "assets/img/song.png"
+        },
+        {
+          "title": "Rush",
+          "artist": "Ayra Starr",
+          "album": "19 & Dangerous",
+          "duration": "2:58",
+          "cover": "assets/img/song.png"
+        },
+        {
+          "title": "Calm Down",
+          "artist": "Rema",
+          "album": "Rave & Roses",
+          "duration": "3:37",
+          "cover": "assets/img/song.png"
+        },
+        {
+          "title": "Last Last",
+          "artist": "Burna Boy",
+          "album": "Love, Damini",
+          "duration": "3:25",
+          "cover": "assets/img/song.png"
+        },
+        {
+          "title": "Essence",
+          "artist": "Wizkid ft. Tems",
+          "album": "Made in Lagos",
+          "duration": "3:05",
+          "cover": "assets/img/song.png"
+        }
+      ]
+    },
+    {
+      "playlistID": 3,
+      "playlist_name": "Igbo High Life",
+      "playlist_author": "Ada Eze",
+      "playlist_art": "assets/img/Ih.jpg",
+      "songs": [
+        {
+          "title": "Odogwu",
+          "artist": "Flavour",
+          "album": "Flavour of Africa",
+          "duration": "4:22",
+          "cover": "assets/img/song.png"
+        },
+        {
+          "title": "Ada Ada",
+          "artist": "Flavour",
+          "album": "Blessed",
+          "duration": "5:10",
+          "cover": "assets/img/song.png"
+        },
+        {
+          "title": "Ogene",
+          "artist": "Phyno ft. Flavour",
+          "album": "Deal With It",
+          "duration": "4:45",
+          "cover": "assets/img/song.png"
+        },
+        {
+          "title": "Nwa Baby",
+          "artist": "Flavour",
+          "album": "Uplifted",
+          "duration": "4:18",
+          "cover": "assets/img/song.png"
+        },
+        {
+          "title": "Ololufe",
+          "artist": "Flavour ft. Chidinma",
+          "album": "Thankful",
+          "duration": "5:32",
+          "cover": "assets/img/song.png"
+        }
+      ]
+    },
+    {
+      "playlistID": 4,
+      "playlist_name": "GRWM",
+      "playlist_author": "Mya Lynn",
+      "playlist_art": "assets/img/images (3).jpeg",
+      "songs": [
+        {
+          "title": "Glam",
+          "artist": "Sabrina Carpenter",
+          "album": "Short n' Sweet",
+          "duration": "3:28",
+          "cover": "assets/img/song.png"
+        },
+        {
+          "title": "Feather",
+          "artist": "Sabrina Carpenter",
+          "album": "Emails I Can't Send",
+          "duration": "3:05",
+          "cover": "assets/img/song.png"
+        },
+        {
+          "title": "Nonsense",
+          "artist": "Sabrina Carpenter",
+          "album": "Emails I Can't Send",
+          "duration": "3:12",
+          "cover": "assets/img/song.png"
+        },
+        {
+          "title": "Espresso",
+          "artist": "Sabrina Carpenter",
+          "album": "Short n' Sweet",
+          "duration": "3:42",
+          "cover": "assets/img/song.png"
+        },
+        {
+          "title": "Please Please Please",
+          "artist": "Sabrina Carpenter",
+          "album": "Short n' Sweet",
+          "duration": "3:18",
+          "cover": "assets/img/song.png"
+        }
+      ]
+    },
+    {
+      "playlistID": 5,
+      "playlist_name": "Rap",
+      "playlist_author": "Jamal Brown",
+      "playlist_art": "assets/img/d828bd5ac2c2135d9d03bec3e8145b8d.jpeg",
+      "songs": [
+        {
+          "title": "SICKO MODE",
+          "artist": "Travis Scott",
+          "album": "ASTROWORLD",
+          "duration": "4:12",
+          "cover": "assets/img/song.png"
+        },
+        {
+          "title": "DNA.",
+          "artist": "Kendrick Lamar",
+          "album": "DAMN.",
+          "duration": "3:55",
+          "cover": "assets/img/song.png"
+        },
+        {
+          "title": "POWER",
+          "artist": "Kanye West",
+          "album": "My Beautiful Dark Twisted Fantasy",
+          "duration": "5:20",
+          "cover": "assets/img/song.png"
+        },
+        {
+          "title": "Humble",
+          "artist": "Kendrick Lamar",
+          "album": "DAMN.",
+          "duration": "3:14",
+          "cover": "assets/img/song.png"
+        },
+        {
+          "title": "N95",
+          "artist": "Kendrick Lamar",
+          "album": "Mr. Morale & The Big Steppers",
+          "duration": "4:27",
+          "cover": "assets/img/song.png"
+        }
+      ]
+    },
+    {
+      "playlistID": 6,
+      "playlist_name": "Gospel",
+      "playlist_author": "Nya Kay",
+      "playlist_art": "assets/img/jesus.jpg",
+      "songs": [
+        {
+          "title": "Way Maker",
+          "artist": "Sinach",
+          "album": "Way Maker",
+          "duration": "5:32",
+          "cover": "assets/img/song.png"
+        },
+        {
+          "title": "Oceans (Where Feet May Fail)",
+          "artist": "Hillsong UNITED",
+          "album": "Zion",
+          "duration": "4:48",
+          "cover": "assets/img/song.png"
+        },
+        {
+          "title": "Graves Into Gardens",
+          "artist": "Elevation Worship",
+          "album": "Graves Into Gardens",
+          "duration": "6:15",
+          "cover": "assets/img/song.png"
+        },
+        {
+          "title": "You Say",
+          "artist": "Lauren Daigle",
+          "album": "Look Up Child",
+          "duration": "4:56",
+          "cover": "assets/img/song.png"
+        },
+        {
+          "title": "Good Good Father",
+          "artist": "Chris Tomlin",
+          "album": "Never Lose Sight",
+          "duration": "5:12",
+          "cover": "assets/img/song.png"
+        }
+      ]
+    },
+    {
+      "playlistID": 7,
+      "playlist_name": "90's classifs",
+      "playlist_author": "Harmony Jones",
+      "playlist_art": "assets/img/images (1).jpeg",
+      "songs": [
+        {
+          "title": "No Scrubs",
+          "artist": "TLC",
+          "album": "FanMail",
+          "duration": "4:10",
+          "cover": "assets/img/song.png"
+        },
+        {
+          "title": "Waterfalls",
+          "artist": "TLC",
+          "album": "CrazySexyCool",
+          "duration": "3:45",
+          "cover": "assets/img/song.png"
+        },
+        {
+          "title": "I Will Always Love You",
+          "artist": "Whitney Houston",
+          "album": "The Bodyguard",
+          "duration": "5:05",
+          "cover": "assets/img/song.png"
+        },
+        {
+          "title": "...Baby One More Time",
+          "artist": "Britney Spears",
+          "album": "...Baby One More Time",
+          "duration": "4:32",
+          "cover": "assets/img/song.png"
+        },
+        {
+          "title": "Wannabe",
+          "artist": "Spice Girls",
+          "album": "Spice",
+          "duration": "3:52",
+          "cover": "assets/img/song.png"
+        }
+      ]
+    },
+    {
+      "playlistID": 8,
+      "playlist_name": "Instrumentals",
+      "playlist_author": "Layla Gray",
+      "playlist_art": "assets/img/images (4).jpeg",
+      "songs": [
+        {
+          "title": "Experience",
+          "artist": "Ludovico Einaudi",
+          "album": "In a Time Lapse",
+          "duration": "4:35",
+          "cover": "assets/img/song.png"
+        },
+        {
+          "title": "River Flows In You",
+          "artist": "Yiruma",
+          "album": "First Love",
+          "duration": "3:52",
+          "cover": "assets/img/song.png"
+        },
+        {
+          "title": "Nuvole Bianche",
+          "artist": "Ludovico Einaudi",
+          "album": "Una Mattina",
+          "duration": "5:22",
+          "cover": "assets/img/song.png"
+        },
+        {
+          "title": "Clair de Lune",
+          "artist": "Claude Debussy",
+          "album": "Suite Bergamasque",
+          "duration": "4:15",
+          "cover": "assets/img/song.png"
+        },
+        {
+          "title": "Gymnopédie No.1",
+          "artist": "Erik Satie",
+          "album": "Trois Gymnopédies",
+          "duration": "3:48",
+          "cover": "assets/img/song.png"
+        }
+      ]
+    },
+    {
+      "playlistID": 9,
+      "playlist_name": "Dance",
+      "playlist_author": "Kalin White",
+      "playlist_art": "assets/img/7ibwdwqwqyt71.jpg",
+      "songs": [
+        {
+          "title": "Don't Start Now",
+          "artist": "Dua Lipa",
+          "album": "Future Nostalgia",
+          "duration": "3:18",
+          "cover": "assets/img/song.png"
+        },
+        {
+          "title": "Physical",
+          "artist": "Dua Lipa",
+          "album": "Future Nostalgia",
+          "duration": "3:29",
+          "cover": "assets/img/song.png"
+        },
+        {
+          "title": "Levitating",
+          "artist": "Dua Lipa ft. DaBaby",
+          "album": "Future Nostalgia",
+          "duration": "3:47",
+          "cover": "assets/img/song.png"
+        },
+        {
+          "title": "Break My Heart",
+          "artist": "Dua Lipa",
+          "album": "Future Nostalgia",
+          "duration": "3:33",
+          "cover": "assets/img/song.png"
+        },
+        {
+          "title": "Hallucinate",
+          "artist": "Dua Lipa",
+          "album": "Future Nostalgia",
+          "duration": "3:16",
+          "cover": "assets/img/song.png"
+        }
+      ]
+    }
+  ]
+}

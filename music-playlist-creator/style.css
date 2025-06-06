@@ -1,6 +1,619 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: "Courier New", Courier, monospace;    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+header#banner {
+    background-color: rgba(77, 44, 175, 0.907);
+    color: white;
+    padding: 20px;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navigation Styles */
+.main-nav ul {
+    display: flex;
+    list-style: none;
     margin: 0;
     padding: 0;
-    background-color: #f8f8f8;
+    gap: 20px;
+}
+
+.main-nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.main-nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.main-nav a.active {
+    background-color: white;
+    color: rgba(77, 44, 175, 0.907);
+}
+
+.search-container {
+    flex: 0 0 300px;
+}
+
+#search-form {
+    display: flex;
+    height: 40px;
+}
+
+#search-input {
+    flex: 1;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 20px 0 0 20px;
+    font-size: 14px;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+#search-input:focus {
+    background-color: white;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+#search-button {
+    width: 40px;
+    border: none;
+    background-color: white;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+#search-button:hover {
+    background-color: #f0f0f0;
+}
+
+#search-button .material-icons {
+    color: rgba(77, 44, 175, 0.907);
+    font-size: 20px;
+}
+
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .search-container {
+        width: 100%;
+        flex: none;
+    }
+
+    .main-nav {
+        margin: 10px 0;
+    }
+}
+
+/* Featured Playlist Page Styles */
+.featured-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.featured-header-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.featured-subtitle {
+    color: #666;
+    margin: 5px 0 0 0;
+    font-style: italic;
+}
+
+#shuffle-featured {
+    margin-top: 0;
+}
+
+.featured-playlist {
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.featured-header {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.featured-image {
+    margin-right: 30px;
+}
+
+.featured-cover {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.featured-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.featured-info h3 {
+    font-size: 32px;
+    margin: 0 0 10px 0;
+}
+
+.featured-info p {
+    font-size: 18px;
+    color: #666;
+    margin: 0;
+}
+
+.featured-songs h4 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.song-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.featured-song {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    transition: all 0.2s ease;
+}
+
+.featured-song:hover {
+    background-color: #f0f0f0;
+}
+
+.song-number {
+    width: 30px;
+    font-weight: bold;
+    color: #888;
+}
+
+.song-thumbnail {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.song-info {
+    flex: 1;
+}
+
+.song-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.song-artist {
+    color: #666;
+    font-size: 14px;
+}
+
+.song-duration {
+    color: #888;
+    font-size: 14px;
+    margin-left: 15px;
+}
+
+#loading {
+    text-align: center;
+    padding: 50px;
+    font-size: 18px;
+    color: #666;
+}
+
+.error-message {
+    background-color: #fff0f0;
+    border-left: 4px solid #ff6b6b;
+    padding: 20px;
+    border-radius: 5px;
+    color: #d63031;
+}
+
+@media (max-width: 600px) {
+    .featured-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .featured-image {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .featured-cover {
+        width: 150px;
+        height: 150px;
+    }
+}
+.playlist-cards {
+   display: grid;
+    grid-template-columns:repeat(3,1fr);
+    gap: 20px;
+    padding: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+
+}
+
+/* #likeButton {
+  background-color: white;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: right;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+} */
+
+/* #likeButton:hover {
+  background-color: black;
+} */
+
+/* #likeButton:active {
+  transform: scale(0.95);
+}
+.container {
+  display: flex;
+  align-items: right;
+  justify-content: space-between;
+  padding: 10px;
+}
+.like-button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #888;
+}
+
+.like-button:hover {
+  color: #ff4d4d;
+}
+
+.like-button.liked {
+    color: #ff4d4d;
+} */
+
+/* .card{
+    background-color: white;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    border-radius: 8px ;
+    text-align: left;
+    height: 150px;
+} */
+.card {
+    background-color: white;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.search-match {
+    animation: highlight 1s ease;
+}
+
+@keyframes highlight {
+    0% { box-shadow: 0 0 0 0 rgba(77, 44, 175, 0.4); }
+    50% { box-shadow: 0 0 20px 10px rgba(77, 44, 175, 0.4); }
+    100% { box-shadow: 0 0 0 0 rgba(77, 44, 175, 0.4); }
+}
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* .like-button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #888;
+    padding: 0;
+}
+
+.like-button.liked {
+    color: #ff4d4d;
+
+} */
+
+.like-button {
+    background-color: transparent;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.like-button .like-icon {
+    color: #ccc;
+    font-size: 20px;
+    transition: all 0.3s ease;
+    transform: scale(1);
+}
+
+.like-button.liked .like-icon {
+    color: red;
+    transform: scale(1.2);
+}
+
+.like-count {
+    font-size: 14px;
+    color: #666;
+    transition: all 0.3s ease;
+}
+
+.like-animation {
+    animation: pulse 0.5s ease-in-out;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.5); }
+    100% { transform: scale(1); }
+}
+
+.modal-overlay{
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(120, 109, 161, 0.907);
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    overflow: auto;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 600px;
+    max-width: 90%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.close-button {
+    float: right;
+    font-size: 24px;
+    cursor: pointer;
+    color: red;
+}
+
+.close-button:hover {
+    color: white;
+}
+
+.modal-header {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.cover-container {
+    position: relative;
+    margin-right: 20px;
+}
+
+.playlist-cover {
+    border-radius: 5px;
+    object-fit: cover;
+    display: block;
+}
+
+.playlist-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.playlist-info h2 {
+    margin: 0 0 10px 0;
+}
+
+.playlist-info p {
+    margin: 0;
+    color: #666;
+}
+
+.modal-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+    align-items: center;
+}
+
+
+
+.song-boxes {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.song-box {
+    display: flex;
+    align-items: center;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.duration {
+    min-width: 50px;
+    color: #666;
+    font-size: 14px;
+}
+
+.song-cover {
+    width: 60px;
+    height: 60px;
+    border-radius: 4px;
+    object-fit: cover;
+    margin: 0 15px;
+}
+
+.song-details {
+    flex-grow: 1;
+}
+
+.song-title, .song-artist, .song-album {
+    margin: 3px 0;
+}
+
+.song-title {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.song-artist {
+    color: #666;
+    font-size: 14px;
+}
+
+.song-album {
+    color: #888;
+    font-size: 12px;
+}
+
+.shuffle-button {
+    background-color: rgba(120, 109, 161, 0.907);
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 15px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.shuffle-button:hover {
+    background-color: rgba(77, 44, 175, 0.907);
+    transform: scale(1.05);
+}
+
+.shuffle-button:active {
+    transform: scale(0.95);
+}
+
+.shuffle-button .material-icons {
+    font-size: 18px;
+}
+
+.shuffle-button.shuffling {
+    animation: pulse 0.5s ease-in-out;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.song-box {
+    display: flex;
+    align-items: center;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    padding: 10px;
+    transition: opacity 0.3s ease;
+}
+
+/* Footer Styles */
+footer {
+    background-color: rgba(77, 44, 175, 0.907);
+    color: white;
+    padding: 30px 0;
+    margin-top: 60px;
+    text-align: center;
+}
+
+.simple-footer {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.simple-footer h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.simple-footer p {
+    font-size: 18px;
+    margin: 0;
+    opacity: 0.9;
+    font-style: italic;
 }
