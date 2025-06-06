@@ -1,9 +1,7 @@
-// Modal functionality
 const modals = document.querySelectorAll(".modal-overlay");
 const closeButtons = document.querySelectorAll(".close-button");
 const cards = document.querySelectorAll(".card");
 
-// Function to open a specific modal
 function openModal(modalId) {
    const modal = document.getElementById(modalId);
    if (modal) {
@@ -11,39 +9,32 @@ function openModal(modalId) {
    }
 }
 
-// Function to close all modals
 function closeAllModals() {
    modals.forEach(modal => {
       modal.style.display = "none";
    });
 }
 
-// Add click events to all close buttons
 closeButtons.forEach(button => {
    button.addEventListener("click", closeAllModals);
 });
 
-// Close modal when clicking outside of it
 window.onclick = function(event) {
    if (event.target.classList.contains("modal-overlay")) {
       closeAllModals();
    }
 }
 
-// Add click events to all cards to open their respective modals
 cards.forEach((card, index) => {
    card.addEventListener("click", function(event) {
-      // Don't open modal if clicking the like button
       if (!event.target.closest(".like-button")) {
          openModal(`modal-${index}`);
       }
    });
 });
 
-// Like button functionality for all cards
 const likeButtons = document.querySelectorAll(".card .like-button");
 
-// Initialize all like buttons
 function initializeLikeButtons() {
   likeButtons.forEach((button, index) => {
     const likeCount = button.querySelector(".like-count");
@@ -91,7 +82,6 @@ function initializeLikeButtons() {
   });
 }
 
-// Function to update a specific like button and count
 function updateLikeButton(button, likeCount, isLiked, currentLikes, storageKey) {
   // Update like button appearance
   if (isLiked) {
@@ -107,27 +97,22 @@ function updateLikeButton(button, likeCount, isLiked, currentLikes, storageKey) 
   localStorage.setItem(storageKey, currentLikes);
 }
 
-// Clear localStorage to ensure default values are used
 function clearLikeStorage() {
   for (let i = 0; i < 9; i++) {
     localStorage.removeItem(`playlistLikes_${i}`);
   }
 }
 
-// Clear localStorage on page load to ensure default values are used
 clearLikeStorage();
 
-// Initialize like buttons when the DOM is loaded
 document.addEventListener("DOMContentLoaded", () => {
   initializeLikeButtons();
   initializeSearch();
 });
 
-// Also initialize immediately in case the DOM is already loaded
 initializeLikeButtons();
 initializeSearch();
 
-// Search functionality
 function initializeSearch() {
   const searchForm = document.getElementById('search-form');
   const searchInput = document.getElementById('search-input');
@@ -165,7 +150,6 @@ function initializeSearch() {
     });
   });
 
-  // Reset search when input is cleared
   searchInput.addEventListener('input', function() {
     if (this.value.trim() === '') {
       cards.forEach(card => {
@@ -175,10 +159,8 @@ function initializeSearch() {
   });
 }
 
-// Shuffle functionality for all modals
 const shuffleButtons = document.querySelectorAll(".shuffle-button");
 
-// Add click events to all shuffle buttons
 shuffleButtons.forEach(button => {
   button.addEventListener("click", function() {
     // Find the current modal and its song boxes
