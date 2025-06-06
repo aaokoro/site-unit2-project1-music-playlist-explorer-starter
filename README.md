@@ -1,7 +1,6 @@
-📝 `NOTE` Use this template to initialize the contents of a README.md file for your application. As you work on your assignment over the course of the week, update the required or stretch features lists to indicate which features you have completed by changing `[ ]` to `[x]`. (🚫 Remove this paragraph before submitting your assignment.)
 ## Unit Assignment: Music Playlist Explorer
-Submitted by: **NAME**
-Estimated time spent: **#** hours spent in total
+Submitted by: Amaka Amanda Okoro
+Estimated time spent: 20 hours
 Deployed Application (**required**): [Music Playlist Explorer Deployed Site]((https://site-unit2-project1-music-playlist-tscu.onrender.com/index.html))
 ### Application Features
 #### CORE FEATURES
@@ -112,8 +111,7 @@ Deployed Application (**required**): [Music Playlist Explorer Deployed Site]((ht
     - [ ] Date added (most recent to oldest, chronologically)
   - [ ] Selecting a sort option should result in a reordering based on the selected sort while maintaining a grid view.
 ### Walkthrough Video
-[`TODO://` Add the embedded URL code to your animated app walkthrough below, `ADD_EMBEDDED_CODE_HERE`. Make sure the video actually renders and is playable when viewing this README. Ensure your walkthrough showcases the presence and/or functionality of all features you implemented above (check them off as you film!). Pay attention to any **VIDEO WALKTHROUGH SPECIAL INSTRUCTIONS** checkboxes listed above to ensure graders see the full functionality of your website! (🚫 Remove this paragraph after adding walkthrough video)
-`ADD_EMBEDDED_CODE_HERE`](https://www.loom.com/share/219d76cde37443e4a8cecc062ae3f153?sid=9fef3f2b-ecb0-47b7-88ed-6fc5d466e3a2)
+(https://www.loom.com/share/219d76cde37443e4a8cecc062ae3f153?sid=9fef3f2b-ecb0-47b7-88ed-6fc5d466e3a2)
 ### Reflection
 * Did the topics discussed in your labs prepare you to complete the assignment? Be specific, which features in your weekly assignment did you feel unprepared to complete?
 Add your response here The topics in lab really impacted me, I was able to learn CSS and HTML thorougly. I struggled with the JS and just getting my like button to click and the shuffle button to work but I did my research and was able to fix everything.
